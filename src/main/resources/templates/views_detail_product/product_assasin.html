@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+  <head th:replace="/fragments/head :: head">
+    <title>Product Detail</title>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+<!--  HEADER -->
+  <header th:replace="/fragments/header :: header"></header>
+
+  <div class="page-heading header-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3>Assasin Creed® II</h3>
+          <span class="breadcrumb"><a th:href="@{/}">Home</a>  >  <a th:href="@{/shop}">Shop</a>  >  Assasin Creed</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="single-product section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="left-image">
+            <img src="/assets/images/trending-01.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 align-self-center">
+          <h4>Call of Duty®: Assasin Creed® II</h4>
+          <span class="price"><em>$28</em> $22</span>
+          <p>This article is about the franchise. For its first game, see Assassin's Creed (video game). For the book series, see Assassin's Creed (book series). For the 2016 film adaptation, see Assassin's Creed (film).</p>
+          <form id="qty" action="#">
+            <input type="qty" class="form-control" id="1" aria-describedby="quantity" placeholder="1">
+            <button type="submit"><i class="fa fa-shopping-bag"></i> ADD TO CART</button>
+          </form>
+          <ul>
+            <li><span>Game ID:</span> COD MMII</li>
+            <li><span>Genre:</span> <a href="#">Action</a>, <a href="#">Team</a>, <a href="#">Single</a></li>
+            <li><span>Multi-tags:</span> <a href="#">War</a>, <a href="#">Battle</a>, <a href="#">Royal</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-12">
+          <div class="sep"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="more-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="tabs-content">
+            <div class="row">
+              <div class="nav-wrapper ">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">Description</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews (3)</button>
+                  </li>
+                </ul>
+              </div>              
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                  <p>While the games in the series have had several narrative arcs, Ubisoft views the series as currently having three periods of development and design philosophy. Until 2015's Assassin's Creed Syndicate, the franchise was structured around single-player content, and while centering on open world spaces and incorporating several role-playing elements, were more action-adventure and stealth-oriented. Period two, covering from Assassin's Creed Origins to Assassin's Creed Mirage, brought in more role-playing elements and live-service features to increase player engagement.</p>
+                  <br>
+                  <p>Period three will launch with Assassin's Creed Shadows, using lessons from the second period of development to make engrossing single-player games similar to the original titles but with features to allow players to share achievements and content with others, all backed by the Infinity hub system.</p>
+                </div>
+                <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                  <p>Coloring book air plant shabby chic, crucifix normcore raclette cred swag artisan activated charcoal. PBR&B fanny pack pok pok gentrify truffaut kitsch helvetica jean shorts edison bulb poutine next level humblebrag la croix adaptogen. <br><br>Hashtag poke literally locavore, beard marfa kogi bruh artisan succulents seitan tonx waistcoat chambray taxidermy. Same cred meggings 3 wolf moon lomo irony cray hell of bitters asymmetrical gluten-free art party raw denim chillwave tousled try-hard succulents street art.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section categories related-games">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <h6>Action</h6>
+            <h2>Related Games</h2>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="main-button">
+            <a th:href="@{/shop}">View All</a>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Strategy</h4>
+            <div class="thumb">
+              <a th:href="@{/categories_strategy}"><img src="/assets/images/categories-01.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Action</h4>
+            <div class="thumb">
+              <a th:href="@{/categories_action}"><img src="/assets/images/categories-04.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Adventure</h4>
+            <div class="thumb">
+              <a th:href="@{/categories_adventure}"><img src="/assets/images/categories-03.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Role-Playing game</h4>
+            <div class="thumb">
+              <a th:href="@{/categories_role}"><img src="/assets/images/categories-02.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Other</h4>
+            <div class="thumb">
+              <a th:href="@{/product-details}"><img src="/assets/images/categories-05.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--  FOOTER -->
+  <footer th:replace="/fragments/footer :: footer"></footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="/vendor/jquery/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/assets/js/isotope.min.js"></script>
+  <script src="/assets/js/owl-carousel.js"></script>
+  <script src="/assets/js/counter.js"></script>
+  <script src="/assets/js/custom.js"></script>
+
+  </body>
+</html>

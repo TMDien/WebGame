@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<body>
+<header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="home.html" class="logo">
+                        <img src="assets/images/logo.png" alt="" style="width: 158px;">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav" sec:authorize="!isAuthenticated()">
+                        <li><a th:href="@{/}" class="active">Home</a></li>
+                        <li><a th:href="@{/shop}">Our Shop</a></li>
+                        <li><a th:href="@{/contact}">Contact Us</a></li>
+                        <li><a th:href="@{/login}">Sign In</a></li>
+                    </ul>
+                    <ul class="nav" sec:authorize="hasRole('ADMIN')">
+                        <li><a th:href="@{/}" class="active">Home</a></li>
+                        <li><a th:href="@{/shop}">Custom Shop</a></li>
+                        <li><a th:href="@{/contact}">Admin</a></li>
+                        <li><a th:href="@{/logout}">Logout</a></li>
+                    </ul>
+                    <ul class="nav" sec:authorize="hasRole('MANAGER')">
+                        <li><a th:href="@{/}" class="active">Home</a></li>
+                        <li><a th:href="@{/shop}">Manager Shop</a></li>
+                        <li><a th:href="@{/contact}">Sales Manager</a></li>
+                        <li><a th:href="@{/logout}">Logout</a></li>
+                    </ul>
+                    <ul class="nav" sec:authorize="hasRole('EMPLOYEE')">
+                        <li><a th:href="@{/}" class="active">Home</a></li>
+                        <li><a th:href="@{/shop}">Our Shop</a></li>
+                        <li><a th:href="@{/contact}">Contact us</a></li>
+                        <li><a th:href="@{/logout}">Logout</a></li>
+                    </ul>
+
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+  <head th:replace="/fragments/head :: head">
+    <title>Product Detail</title>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+<!--  HEADER -->
+  <header th:replace="/fragments/header :: header"></header>
+
+  <div class="page-heading header-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3>Tower of Fantasy®</h3>
+          <span class="breadcrumb"><a th:href="@{/}">Home</a>  >  <a th:href="@{/shop}">Shop</a>  >  Tower of Fantasy</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="single-product section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="left-image">
+            <img src="/assets/images/trending-02.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 align-self-center">
+          <h4>Call of Duty®: Tower of Fantasy®</h4>
+          <span class="price"><em>$67</em> $35</span>
+          <p>Tower of Fantasy players call out item and skill descriptions that they say have missing, wrong, or misleading details in the Genshin Impact like anime RPG game</p>
+          <form id="qty" action="#">
+            <input type="qty" class="form-control" id="1" aria-describedby="quantity" placeholder="1">
+            <button type="submit"><i class="fa fa-shopping-bag"></i> ADD TO CART</button>
+          </form>
+          <ul>
+            <li><span>Game ID:</span> COD MMII</li>
+            <li><span>Genre:</span> <a href="#">Action</a>, <a href="#">Team</a>, <a href="#">Single</a></li>
+            <li><span>Multi-tags:</span> <a href="#">War</a>, <a href="#">Battle</a>, <a href="#">Royal</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-12">
+          <div class="sep"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="more-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="tabs-content">
+            <div class="row">
+              <div class="nav-wrapper ">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">Description</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews (3)</button>
+                  </li>
+                </ul>
+              </div>              
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                  <p>Tower of Fantasy players are highlighting apparent issues with localisation in the free-to-play game, pointing to a series of items and skills with descriptions that they say have missing, wrong, or misleading details. The Genshin Impact-like has proven popular since its launch in August and players are already anticipating the Tower of Fantasy 1.5 release date later in September. However, some say they have become frustrated by a number of notable inconsistencies across the anime game’s text descriptions.</p>
+                  <br>
+                  <p>A thread on the Tower of Fantasy subreddit raised the issue, querying why the Samir matrix set used in the best Samir build has completely different descriptions between the in-game reward preview page and the actual item description on the matrix itself. In response, user Tankulator provided an extensive count of incorrect or misleading descriptions they have come across, calling upon other players to contribute their own findings.</p>
+                </div>
+                <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                  <p>Ken is a news writer for PCGamesN. He wants to play everything that comes out, but keeps finding himself back on old favorites. As such, you’ll find him covering the latest updates for FFXIV and Terraria, and diving deep into some of today’s biggest games such as Baldur’s Gate 3 and Diablo 4. He especially loves RPGs, soulslikes, and roguelikes, and just won't stop talking about the Monster Hunter and Like a Dragon games. A masters graduate in mathematics, you’ll also find Ken playing the piano, cello, and guitar in his spare time.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section categories related-games">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <h6>Action</h6>
+            <h2>Related Games</h2>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="main-button">
+            <a th:href="@{/shop}">View All</a>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Strategy</h4>
+            <div class="thumb">
+              <a th:href="@{/categories_strategy}"><img src="/assets/images/categories-01.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Action</h4>
+            <div class="thumb">
+              <a th:href="@{/categories_action}"><img src="/assets/images/categories-04.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Adventure</h4>
+            <div class="thumb">
+              <a th:href="@{/categories_adventure}"><img src="/assets/images/categories-03.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Role-Playing game</h4>
+            <div class="thumb">
+              <a th:href="@{/categories_role}"><img src="/assets/images/categories-02.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Other</h4>
+            <div class="thumb">
+              <a th:href="@{/product-details}"><img src="/assets/images/categories-05.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--  FOOTER -->
+  <footer th:replace="/fragments/footer :: footer"></footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>
