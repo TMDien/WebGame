@@ -47,4 +47,9 @@ public class ActionController {
     public String categoriesRole(Model model) {
         return "categories/categories_role";
     }
+
+    @GetMapping("/free_store")
+    public String showFreeStore() {
+        return "categories/free_store";
+    }
 }

@@ -41,16 +41,18 @@ public class HomeController {
 
     @GetMapping("/leaders")
     public String showLeaders() {
-
         return "leaders";
     }
-
     // add request mapping for /systems
 
     @GetMapping("/systems")
     public String showSystems() {
-
         return "systems";
+    }
+
+    @GetMapping("/user_more")
+    public String showUserMore(Model model) {
+        return "views_web/user_more";
     }
 
 

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<body>
+<!--  HEAD -->
+<head th:replace="/fragments/head :: head"></head>
+
+
+<!--Preloader -->
+<div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</div>
+<!-- HEADER -->
+<header th:replace="/fragments/header :: header"></header>
+
+<div class="main-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 align-self-center">
+                <div class="caption header-text">
+                    <h6>Welcome to lugx</h6>
+                    <h2>BEST GAMING SITE EVER!</h2>
+                    <p>LUGX Gaming is free Bootstrap 5 HTML CSS website template for your gaming websites. You can
+                        download and use this layout for commercial purposes. Please tell your friends about
+                        TemplateMo.</p>
+                    <div class="search-input">
+                        <form id="search" action="#">
+                            <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword"
+                                   onkeypress="handle"/>
+                            <button role="button">Search Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 offset-lg-2">
+                <div class="right-image">
+                    <img src="assets/images/banner-image.jpg" alt="">
+                    <span class="price">$22</span>
+                    <span class="offer">-40%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <a href="#">
+                    <div class="item">
+                        <div class="image">
+                            <img src="assets/images/featured-01.png" alt="" style="max-width: 44px;">
+                        </div>
+                        <h4>Free Storage</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <a href="#">
+                    <div class="item">
+                        <div class="image">
+                            <img src="assets/images/featured-02.png" alt="" style="max-width: 44px;">
+                        </div>
+                        <h4>User More</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <a href="#">
+                    <div class="item">
+                        <div class="image">
+                            <img src="assets/images/featured-03.png" alt="" style="max-width: 44px;">
+                        </div>
+                        <h4>Reply Ready</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <a href="#">
+                    <div class="item">
+                        <div class="image">
+                            <img src="assets/images/featured-04.png" alt="" style="max-width: 44px;">
+                        </div>
+                        <h4>Easy Layout</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section trending">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section-heading">
+                    <h6>Trending</h6>
+                    <h2>Trending Games</h2>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="main-button">
+                    <a href="shop.html">View All</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="product-details.html"><img src="assets/images/trending-01.jpg" alt=""></a>
+                        <span class="price"><em>$28</em>$20</span>
+                    </div>
+                    <div class="down-content">
+                        <span class="category">Action</span>
+                        <h4>Assasin Creed</h4>
+                        <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="product-details.html"><img src="assets/images/trending-02.jpg" alt=""></a>
+                        <span class="price">$44</span>
+                    </div>
+                    <div class="down-content">
+                        <span class="category">Action</span>
+                        <h4>Assasin Creed</h4>
+                        <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="product-details.html"><img src="assets/images/trending-03.jpg" alt=""></a>
+                        <span class="price"><em>$64</em>$44</span>
+                    </div>
+                    <div class="down-content">
+                        <span class="category">Action</span>
+                        <h4>Assasin Creed</h4>
+                        <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="product-details.html"><img src="assets/images/trending-04.jpg" alt=""></a>
+                        <span class="price">$32</span>
+                    </div>
+                    <div class="down-content">
+                        <span class="category">Action</span>
+                        <h4>Assasin Creed</h4>
+                        <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section most-played">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section-heading">
+                    <h6>TOP GAMES</h6>
+                    <h2>Most Played</h2>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="main-button">
+                    <a href="shop.html">View All</a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="product-details.html"><img src="assets/images/top-game-01.jpg" alt=""></a>
+                    </div>
+                    <div class="down-content">
+                        <span class="category">Adventure</span>
+                        <h4>Assasin Creed</h4>
+                        <a href="product-details.html">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="product-details.html"><img src="assets/images/top-game-02.jpg" alt=""></a>
+                    </div>
+                    <div class="down-content">
+                        <span class="category">Adventure</span>
+                        <h4>Assasin Creed</h4>
+                        <a href="product-details.html">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="product-details.html"><img src="assets/images/top-game-03.jpg" alt=""></a>
+                    </div>
+                    <div class="down-content">
+                        <span class="category">Adventure</span>
+                        <h4>Assasin Creed</h4>
+                        <a href="product-details.html">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="product-details.html"><img src="assets/images/top-game-04.jpg" alt=""></a>
+                    </div>
+                    <div class="down-content">
+                        <span class="category">Adventure</span>
+                        <h4>Assasin Creed</h4>
+                        <a href="product-details.html">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="product-details.html"><img src="assets/images/top-game-05.jpg" alt=""></a>
+                    </div>
+                    <div class="down-content">
+                        <span class="category">Adventure</span>
+                        <h4>Assasin Creed</h4>
+                        <a href="product-details.html">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="product-details.html"><img src="assets/images/top-game-06.jpg" alt=""></a>
+                    </div>
+                    <div class="down-content">
+                        <span class="category">Adventure</span>
+                        <h4>Assasin Creed</h4>
+                        <a href="product-details.html">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section categories">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="section-heading">
+                    <h6>Categories</h6>
+                    <h2>Top Categories</h2>
+                </div>
+            </div>
+            <div class="col-lg col-sm-6 col-xs-12">
+                <div class="item">
+                    <h4>Action</h4>
+                    <div class="thumb">
+                        <a href="product-details.html"><img src="assets/images/categories-01.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg col-sm-6 col-xs-12">
+                <div class="item">
+                    <h4>Action</h4>
+                    <div class="thumb">
+                        <a href="product-details.html"><img src="assets/images/categories-05.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg col-sm-6 col-xs-12">
+                <div class="item">
+                    <h4>Action</h4>
+                    <div class="thumb">
+                        <a href="product-details.html"><img src="assets/images/categories-03.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg col-sm-6 col-xs-12">
+                <div class="item">
+                    <h4>Action</h4>
+                    <div class="thumb">
+                        <a href="product-details.html"><img src="assets/images/categories-04.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg col-sm-6 col-xs-12">
+                <div class="item">
+                    <h4>Action</h4>
+                    <div class="thumb">
+                        <a href="product-details.html"><img src="assets/images/categories-05.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="shop">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section-heading">
+                                <h6>Our Shop</h6>
+                                <h2>Go Pre-Order Buy & Get Best <em>Prices</em> For You!</h2>
+                            </div>
+                            <p>Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor incididunt.</p>
+                            <div class="main-button">
+                                <a href="shop.html">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 offset-lg-2 align-self-end">
+                <div class="subscribe">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section-heading">
+                                <h6>NEWSLETTER</h6>
+                                <h2>Get Up To $100 Off Just Buy <em>Subscribe</em> Newsletter!</h2>
+                            </div>
+                            <div class="search-input">
+                                <form id="subscribe" action="#">
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                           aria-describedby="emailHelp" placeholder="Your email...">
+                                    <button type="submit">Subscribe Now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer th:replace="/fragments/footer :: footer"></footer>
+
+<!--Login-->
+<!--login-->
+<div class="modal_auth">
+    <div class="modal_over"></div>
+    <div class="containerLogin modal_auth-body" id="containerLogin">
+        <div class="profile">
+            <div class="profile-sidebar">
+                <div class="profile-userpic">
+                    <img src="https://hocwebgiare.com/thiet_ke_web_chuan_demo/bootstrap_user_profile/images/profile_user.jpg"
+                         class="img-responsive" alt="Thông tin cá nhân">
+                </div>
+                <div class="profile-usertitle">
+                    <div class="profile-usertitle-name">
+                        <span sec:authentication="principal.username"></span>
+                    </div>
+                    <div class="profile-usertitle-job">
+                        <span sec:authentication="principal.authorities"></span>
+                    </div>
+                </div>
+                <div class="profile-userbuttons">
+                    <a th:href="@{/}">
+                        <button type="button" class="btn btn-success btn-sm">Trang chủ</button>
+                    </a>
+                </div>
+                <div class="profile-userbuttons">
+                    <a th:href="@{/logout}">
+                        <button type="button" class="btn btn-danger btn-sm">Logout</button>
+                    </a>
+                </div>
+                <div class="profile-usermenu">
+                    <ul class="nav">
+                        <li>
+                            <a href="https://hocwebgiare.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                     style="margin-bottom: 3px; margin-right: 6px" fill="currentColor"
+                                     class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+                                </svg>
+                                Cập nhật thông tin cá nhân
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="profile-usermenu">
+                    <ul class="nav">
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                     style="margin-bottom: 3px; margin-right: 6px" fill="currentColor"
+                                     class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                                </svg>
+                                Sản phẩm yêu thích
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="profile-usermenu">
+                    <ul class="nav">
+                        <li>
+                            <a href="#" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                     style="margin-bottom: 3px; margin-right: 6px" fill="currentColor"
+                                     class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                </svg>
+                                Quản lý đơn hàng </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="profile-usermenu">
+                    <ul class="nav">
+                        <li>
+                            <a href="https://hocwebgiare.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                     style="margin-bottom: 3px; margin-right: 6px" fill="currentColor"
+                                     class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                                </svg>
+                                Tin nhắn </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!-- Scripts -->
+<!-- Bootstrap core JavaScript -->
+<script src="/vendor/jquery/jquery.min.js"></script>
+<script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/js/isotope.min.js"></script>
+<script src="/assets/js/owl-carousel.js"></script>
+<script src="/assets/js/counter.js"></script>
+<script src="/assets/js/custom.js"></script>
+<script src="/assets/js/login.js"></script>
+
+</body>
+</html>
