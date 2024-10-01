@@ -22,7 +22,7 @@
                     <ul class="nav" sec:authorize="hasRole('ADMIN')">
                         <li><a th:href="@{/}" class="active">Home</a></li>
                         <li><a th:href="@{/shop}">Custom Shop</a></li>
-                        <li><a th:href="@{/contact}">Admin</a></li>
+                        <li><a th:href="@{/admin}">Admin</a></li>
                         <li><a th:href="@{/logout}">Logout</a></li>
                     </ul>
                     <ul class="nav" sec:authorize="hasRole('MANAGER')">

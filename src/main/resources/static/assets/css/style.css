@@ -1830,6 +1830,9 @@ form {
   max-width: 100%;
   min-height: 480px;
 }
+.containerUser{
+  background-color: #aecbf8;
+}
 
 .form-container {
   position: absolute;
@@ -1968,7 +1971,7 @@ form {
 
 .profile-sidebar {
   padding: 20px 0 10px 0;
-  background: #fff;
+  background-color: #aecbf8;
   text-align: center;
 }
 
@@ -1991,7 +1994,7 @@ form {
 .profile-usertitle-name {
   text-align: center;
   color: #5a7391;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 7px;
 }
@@ -2000,7 +2003,7 @@ form {
 .profile-usertitle-job {
   text-transform: uppercase;
   color: #5b9bd1;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -2009,7 +2012,7 @@ form {
 .profile-userbuttons {
   display: inline-block;
   text-align: center;
-  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 
@@ -2027,6 +2030,7 @@ form {
 }
 .profile-usermenu {
   margin-top: 10px;
+  color: white;
 }
 
 .profile-usermenu ul li {
@@ -2039,8 +2043,8 @@ form {
 }
 
 .profile-usermenu ul li a {
-  color: #93a3b5;
-  font-size: 14px;
+  color: #ffffff;
+  font-size: 18px;
   font-weight: 400;
 }
 
