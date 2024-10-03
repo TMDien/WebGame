@@ -13,4 +13,9 @@ public class AdminController {
     public String admin() {
         return "views_admin/admin";
     }
+
+    @GetMapping("/menu")
+    public String menu() {
+        return "views_admin/menu";
+    }
 }
