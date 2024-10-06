@@ -18,4 +18,30 @@ public class AdminController {
     public String menu() {
         return "views_admin/menu";
     }
+
+    @GetMapping("/add_menu")
+    public String addMenu() {
+        return "views_admin/add-menu";
+    }
+
+    @GetMapping("/edit_menu")
+    public String editMenu() {
+        return "views_admin/edit-menu";
+    }
+
+    @GetMapping("/banner")
+    public String banner() {
+        return "views_admin/banner";
+    }
+
+    @GetMapping("/edit_banner")
+    public String editBanner() {
+        return "views_admin/edit-banner";
+    }
+
+    @GetMapping("/add_banner")
+    public String addBanner() {
+        return "views_admin/add-banner";
+    }
+
 }

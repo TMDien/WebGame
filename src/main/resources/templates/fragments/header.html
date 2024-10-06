@@ -28,7 +28,7 @@
                     <ul class="nav" sec:authorize="hasRole('MANAGER')">
                         <li><a th:href="@{/}" class="active">Home</a></li>
                         <li><a th:href="@{/shop}">Manager Shop</a></li>
-                        <li><a th:href="@{/contact}">Sales Manager</a></li>
+                        <li><a th:href="@{/Manager}">Sales Manager</a></li>
                         <li><a th:href="@{/logout}">Logout</a></li>
                     </ul>
                     <ul class="nav" sec:authorize="hasRole('EMPLOYEE')">

@@ -30,11 +30,16 @@
         </a>
         <nav class="navbar navbar-static-top">
             <!-- Sidebar toggle button-->
-            <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+            <a>
+                <a data-toggle="push-menu" role="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" style="color: white; margin-top: 13px; margin-left: 10px" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
             </a>
 
             <div class="navbar-custom-menu">
@@ -61,7 +66,10 @@
                                             </div>
                                             <h4>
                                                 Support Team
-                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                <small><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                                                </svg>5 mins</small>
                                             </h4>
                                             <p>Why not buy a new awesome theme?</p>
                                         </a>
@@ -88,7 +96,9 @@
                                 <ul class="menu">
                                     <li>
                                         <a href="#">
-                                            <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="margin-top: 10px; margin-right: 10px" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                            </svg>5 new members joined today
                                         </a>
                                     </li>
                                 </ul>
@@ -167,7 +177,7 @@
                             <!-- Menu Footer-->
                             <li class="user-footer">
                                 <div class="pull-left">
-                                    <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                    <a th:href="@{/}" class="btn btn-default btn-flat">Home Main</a>
                                 </div>
                                 <div class="pull-right">
                                     <a th:href="@{/logout}" class="btn btn-default btn-flat">Sign out</a>
@@ -254,14 +264,14 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="">
+                        <li><a th:href="@{/banner}">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                  style="margin-top: 5px; margin-right: 10px" fill="currentColor"
                                  class="bi bi-circle text-success" viewBox="0 0 16 16">
                                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
                             </svg>
                             Dashboard v1</a></li>
-                        <li><a href="">
+                        <li><a th:href="@{/banner}">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                  style="margin-top: 8px; margin-right: 10px" fill="currentColor"
                                  class="bi bi-circle text-success" viewBox="0 0 16 16">
@@ -309,20 +319,20 @@
 
         <!-- Main content -->
         <section class="content">
-
             <!-- Default box -->
             <div class="col-xs-12">
                 <div class="box">
                     <div class="box-header">
-                        <a href="add-menu.html" class="btn btn-success">+Thêm mới Menu</a>
-
+                        <a th:href="@{/add_menu}" class="btn btn-success">+Thêm mới Menu</a>
                         <div class="box-tools">
                             <div class="input-group input-group-sm" style="width: 150px;">
                                 <input type="text" name="table_search" class="form-control pull-right"
                                        placeholder="Search">
 
                                 <div class="input-group-btn">
-                                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                                    <button type="submit" class="btn btn-default"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                    </svg></button>
                                 </div>
                             </div>
                         </div>
@@ -333,62 +343,93 @@
                             <tbody>
                             <tr>
                                 <th>Tên</th>
-                                <th>Menu cha</th>
+                                <th>Role</th>
                                 <th>Ngày tạo</th>
                                 <th>Trạng thái</th>
                                 <th>Tùy chọn</th>
                             </tr>
                             <tr>
-                                <td>Trang chủ</td>
+                                <td style="padding-top: 15px">Home</td>
                                 <td>____</td>
-                                <td>10-10-2018</td>
-                                <td><span class="label label-success">Hiển thị</span></td>
+                                <td style="padding-top: 15px">1-10-2024</td>
+                                <td style="padding-top: 15px"><span class="label label-success">Hiển thị</span></td>
                                 <td>
-                                    <a href="edit-menu.html" class="btn btn-success">Sửa</a>
+                                    <a th:href="@{/edit_menu}" class="btn btn-success">Sửa</a>
                                     <a href="" class="btn btn-danger">Xóa</a>
 
                                 </td>
                             </tr>
                             <tr>
-                                <td>Giới Thiệu</td>
+                                <td style="padding-top: 15px">Shop</td>
                                 <td>____</td>
-                                <td>10-10-2018</td>
-                                <td><span class="label label-success">Hiển thị</span></td>
+                                <td style="padding-top: 15px">2-10-2024</td>
+                                <td style="padding-top: 15px"><span class="label label-success">Hiển thị</span></td>
                                 <td>
-                                    <a href="" class="btn btn-success">Sửa</a>
+                                    <a th:href="@{/edit_menu}" class="btn btn-success">Sửa</a>
                                     <a href="" class="btn btn-danger">Xóa</a>
 
                                 </td>
                             </tr>
                             <tr>
-                                <td>Đào tạo</td>
+                                <td style="padding-top: 15px">Contact</td>
                                 <td>____</td>
-                                <td>10-10-2018</td>
-                                <td><span class="label label-success">Hiển thị</span></td>
+                                <td style="padding-top: 15px">3-10-2024</td>
+                                <td style="padding-top: 15px"><span class="label label-success">Hiển thị</span></td>
                                 <td>
-                                    <a href="" class="btn btn-success">Sửa</a>
+                                    <a th:href="@{/edit_menu}" class="btn btn-success">Sửa</a>
                                     <a href="" class="btn btn-danger">Xóa</a>
 
                                 </td>
                             </tr>
                             <tr>
-                                <td>Chương trình đào tạo</td>
-                                <td>Đào tạo</td>
-                                <td>10-10-2018</td>
-                                <td><span class="label label-success">Hiển thị</span></td>
+                                <td style="padding-top: 15px">Login</td>
+                                <td style="padding-top: 15px">____</td>
+                                <td style="padding-top: 15px">4-10-2024</td>
+                                <td style="padding-top: 15px"><span class="label label-success">Hiển thị</span></td>
                                 <td>
-                                    <a href="" class="btn btn-success">Sửa</a>
+                                    <a th:href="@{/edit_menu}" class="btn btn-success">Sửa</a>
                                     <a href="" class="btn btn-danger">Xóa</a>
 
                                 </td>
                             </tr>
                             <tr>
-                                <td>Thi đua khen thưởng</td>
-                                <td>Đào tạo</td>
-                                <td>10-10-2018</td>
-                                <td><span class="label label-danger">Đang ẩn</span></td>
+                                <td style="padding-top: 15px">Logout</td>
+                                <td style="padding-top: 15px">____</td>
+                                <td style="padding-top: 15px">4-10-2024</td>
+                                <td style="padding-top: 15px"><span class="label label-success">Hiển thị</span></td>
                                 <td>
-                                    <a href="" class="btn btn-success">Sửa</a>
+                                    <a th:href="@{/edit_menu}" class="btn btn-success">Sửa</a>
+                                    <a href="" class="btn btn-danger">Xóa</a>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-top: 15px">Admin</td>
+                                <td style="padding-top: 15px">Role_Admin</td>
+                                <td style="padding-top: 15px">4-10-2024</td>
+                                <td style="padding-top: 15px"><span class="label label-success">Hiển thị</span></td>
+                                <td>
+                                    <a th:href="@{/edit_menu}" class="btn btn-success">Sửa</a>
+                                    <a href="" class="btn btn-danger">Xóa</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-top: 15px">Sales Manager</td>
+                                <td style="padding-top: 15px">Role_Manager</td>
+                                <td style="padding-top: 15px">4-10-2024</td>
+                                <td style="padding-top: 15px"><span class="label label-success">Hiển thị</span></td>
+                                <td>
+                                    <a th:href="@{/edit_menu}" class="btn btn-success">Sửa</a>
+                                    <a href="" class="btn btn-danger">Xóa</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-top: 15px">Sale bùng nổ</td>
+                                <td style="padding-top: 15px">Đào tạo</td>
+                                <td style="padding-top: 15px">5-10-2024</td>
+                                <td style="padding-top: 15px"><span class="label label-danger">Đang ẩn</span></td>
+                                <td>
+                                    <a th:href="@{/edit_menu}" class="btn btn-success">Sửa</a>
                                     <a href="" class="btn btn-danger">Xóa</a>
 
                                 </td>

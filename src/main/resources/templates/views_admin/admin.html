@@ -30,7 +30,10 @@
         </a>
         <nav class="navbar navbar-static-top">
             <!-- Sidebar toggle button-->
-            <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+            <a data-toggle="push-menu" role="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" style="color: white; margin-top: 13px; margin-left: 10px" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+                </svg>
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -61,7 +64,10 @@
                                             </div>
                                             <h4>
                                                 Support Team
-                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                <small><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                                                </svg>5 mins</small>
                                             </h4>
                                             <p>Why not buy a new awesome theme?</p>
                                         </a>
@@ -88,7 +94,9 @@
                                 <ul class="menu">
                                     <li>
                                         <a href="#">
-                                            <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="margin-top: 10px; margin-right: 10px" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                            </svg>5 new members joined today
                                         </a>
                                     </li>
                                 </ul>
@@ -254,14 +262,14 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="">
+                        <li><a th:href="@{/banner}">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                  style="margin-top: 5px; margin-right: 10px" fill="currentColor"
                                  class="bi bi-circle text-success" viewBox="0 0 16 16">
                                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
                             </svg>
                             Dashboard v1</a></li>
-                        <li><a href="">
+                        <li><a th:href="@{/banner}">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                  style="margin-top: 8px; margin-right: 10px" fill="currentColor"
                                  class="bi bi-circle text-success" viewBox="0 0 16 16">
@@ -270,7 +278,6 @@
                             Dashboard v2</a></li>
                     </ul>
                 </li>
-
                 <li>
                     <a href="">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -318,10 +325,14 @@
                     <div class="box-tools pull-right">
                         <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
                                 title="Collapse">
-                            <i class="fa fa-minus"></i></button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                            </svg></button>
                         <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip"
                                 title="Remove">
-                            <i class="fa fa-times"></i></button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                            </svg></button>
                     </div>
                 </div>
                 <div class="box-body">
@@ -359,6 +370,6 @@
 <script src="/assets/js/dashboard.js"></script>
 <script src="/assets/tinymce/tinymce.min.js"></script>
 <script src="/assets/tinymce/config.js"></script>
-<script src="/assets/ js/function.js"></script>
+<script src="/assets/js/function.js"></script>
 </body>
 </html>
